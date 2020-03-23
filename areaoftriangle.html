@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Area of Traingle - Simple JavaScript Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Load Bootstrap library for better UI look & feel -->
+    <link rel="stylesheet" type="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script>
+      function findAreaOfTriangle(){
+        var RecLen, RecWid, Area;
+        RecLen = document.getElementById("rec_len").value;
+        RecWid = document.getElementById("rec_wid").value;
+        Area = 0.5*RecLen*RecWid;
+        document.getElementById("result").value = Area;
+      }
+    </script>
+</head>
+<body>
+  <div class="container">
+    <br />
+      <h2>JavaScript to find Area of triangle</h2>
+    <br />
+    <div class="form-group">
+      <label for="rec_len">Enter triangle base Length:</label>
+      <input type="text" class="form-control" id="rec_len" >
+    </div>
+    <div class="form-group">
+      <label for="rec_wid">Enter triangle height:</label>
+      <input type="text" class="form-control req" id="rec_wid" >
+    </div>
+    <div class="form-group">
+      <label for="result">Result:</label>
+      <input type="text" class="form-control req" id="result" readonly >
+    </div>
+    <button type="submit" class="btn btn-default" onclick="findAreaOfTriangle()">Submit</button>
+  </div>
+</body>
+</html>
