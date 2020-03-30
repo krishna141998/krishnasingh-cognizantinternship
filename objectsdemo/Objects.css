@@ -1,0 +1,33 @@
+#id {
+
+    margin: 10px;
+   
+}
+#firstName {
+    margin-top: 10px;
+}
+
+#lastName {
+    margin-top: 10px;
+}
+
+#email
+{
+    margin-top: 10px;
+}
+
+#search1
+{
+    margin-top: 10px;
+}
+.button{
+    margin: 10px;
+}
+
+.container {
+    border: 1px solid black;
+    width: 1000px;
+    margin: auto;
+    height: 300px;
+    
+}
